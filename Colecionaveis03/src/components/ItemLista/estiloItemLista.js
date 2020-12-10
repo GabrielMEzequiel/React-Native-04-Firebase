@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const estiloItemLista = StyleSheet.create({
     areaItens: {   
         flex: 1,
-        backgroundColor: '#92afd7',
+        backgroundColor: '#e8eaec',
     },
     itemTitulo: {   
         height: 40,

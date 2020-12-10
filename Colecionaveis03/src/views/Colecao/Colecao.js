@@ -13,7 +13,7 @@ function Colecao({ navigation }) {
 
     useEffect(() => {
         livroFb.pegarColecao()
-            .orderBy('titulo')
+            .orderBy('Nome')
             .onSnapshot((query) => {
                 const itens = [];
                 query.forEach((doc) => {
@@ -40,11 +40,11 @@ function Colecao({ navigation }) {
 
             <View style={estiloColecao.header}>
                 <TouchableOpacity onPress={voltar}>
-                    <MaterialIcons name="arrow-back" size={24} color="white" />
+                    <MaterialIcons name="arrow-back" size={24} color="Black" />
                 </TouchableOpacity>
-                <Text style={estiloColecao.texto}>Coleção</Text>
+                <Text style={estiloColecao.texto}>Alunos</Text>
                 <TouchableOpacity onPress={adicionar}>
-                    <MaterialIcons name="add" size={24} color="white" />
+                    <MaterialIcons name="add" size={24} color="Black" />
                 </TouchableOpacity>
             </View>
 

@@ -2,9 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const estiloInicial = StyleSheet.create({
    container: {   
-     flex: 1,
-     justifyContent: 'center',
-     alignItems: 'center',
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'space-evenly',
+      alignItems: 'center',     
+      width: '100%',
+      height: '100%',
    },
    header: {
       height: 50,
@@ -12,13 +15,6 @@ const estiloInicial = StyleSheet.create({
       backgroundColor: '#081a31',
       flexDirection: 'row',
       alignItems: 'flex-end',    
-   },
-   fundo: {   
-      flexDirection: 'row',
-      justifyContent: 'space-evenly',
-      alignItems: 'center',     
-      width: '100%',
-      height: '100%',
    },
    botaoBackground: {
       width: 160,
@@ -29,7 +25,7 @@ const estiloInicial = StyleSheet.create({
       alignItems: 'center',
       padding: 10,
       borderWidth: 1,
-      borderColor: '#14417b',
+      borderColor: '#384B59',
    },
    botaoTexto: {
       fontSize: 22,

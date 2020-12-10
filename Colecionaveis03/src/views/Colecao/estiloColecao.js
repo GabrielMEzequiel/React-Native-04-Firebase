@@ -3,11 +3,11 @@ import { StyleSheet } from 'react-native';
 const estiloColecao = StyleSheet.create({
    container: {   
       flex: 1,
-      backgroundColor: '#14417b',
+      backgroundColor: '#bdbfc0',
    },
    header: {
       height: 50,
-      backgroundColor: '#14417b',
+      backgroundColor: '#ffffff',
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -15,7 +15,7 @@ const estiloColecao = StyleSheet.create({
    },
    texto: {
       fontSize: 20,
-      color: '#FFFFFF',
+      color: '#000000',
       fontWeight: 'bold',
    },
 

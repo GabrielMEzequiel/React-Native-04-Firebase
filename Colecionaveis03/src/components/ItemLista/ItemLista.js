@@ -10,12 +10,12 @@ const ItemLista = ({data, detalhe}) => {
     return (
         <TouchableOpacity style={estiloItemLista.areaItens} onPress={detalhe}>
 
-            <LinearGradient colors={['#14417b', '#92afd7', '#92afd7']}>
-                <Text style={estiloItemLista.itemTitulo}> {item.titulo} </Text>
+            <LinearGradient colors={['#bdbfc0', '#e8eaec', '#e8eaec']}>
+                <Text style={estiloItemLista.itemTitulo}> {item.Nome} </Text>
             </LinearGradient>
-            <Text style={estiloItemLista.itemSubTitulo}> {item.autor} ({item.anoPublicacao}) </Text>
+            <Text style={estiloItemLista.itemSubTitulo}> {item.Sala} ({item.Turma}) </Text>
             
-            <LinearGradient colors={['#92afd7', '#92afd7', '#14417b']}>
+            <LinearGradient colors={['#e8eaec', '#e8eaec', '#bdbfc0']}>
                 <Text> </Text>
                 {/*
                 <Image 

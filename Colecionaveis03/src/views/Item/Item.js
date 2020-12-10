@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Text, View, TouchableOpacity, TextInput, ScrollView } from 'react-native';
 import estiloItem from './estiloItem';
 import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { LivroFB } from '../../firebase/livroFB';
@@ -36,77 +37,52 @@ function Item({ navigation, route }) {
 
             <View style={estiloItem.header}>
                 <TouchableOpacity onPress={voltar}>
-                    <MaterialIcons name="arrow-back" size={24} color="white" />
+                    <MaterialIcons name="arrow-back" size={24} color="Black" />
                 </TouchableOpacity>
-                <Text style={estiloItem.texto}>Item</Text>
+                <Text style={estiloItem.texto}>Adicionar Aluno</Text>
                 <Text></Text>
             </View>
 
             <View style={estiloItem.formularioContainer}>
 
                 <View style={estiloItem.campoContainer}>
-                    <FontAwesome5 name="book" size={26} color="#192f6a" />
+                    <MaterialIcons name="person" size={24} color="#384B59" />
                     <TextInput
                         style={estiloItem.campo}
-                        placeholder="Titulo"
-                        placeholderTextColor='#ffffff'
-                        onChangeText={titulo => setItem({...item, titulo})}
-                        value={item.titulo}
+                        placeholder="Nome"                      
+                        onChangeText={Nome => setItem({...item, Nome})}
+                        value={item.Nome}
                     />
                 </View>
 
                 <View style={estiloItem.campoContainer}>
-                    <FontAwesome5 name="book-reader" size={26} color="#192f6a" />
+                    <MaterialIcons name="school" size={24} color="#384B59" />
                     <TextInput
                         style={estiloItem.campo}
-                        placeholder="Autor"
-                        placeholderTextColor='#ffffff'
-                        onChangeText={autor => setItem({...item, autor})}
-                        value={item.autor}
+                        placeholder="Sala"                       
+                        onChangeText={Sala => setItem({...item, Sala})}
+                        value={item.Sala}
                     />
                 </View>
 
                 <View style={estiloItem.campoContainer}>
-                    <FontAwesome5 name="calendar-alt" size={26} color="#192f6a" />
-                    <TextInput
-                        style={estiloItem.campo}
-                        placeholder="Ano de publicação"
-                        placeholderTextColor='#ffffff'
-                        keyboardType='numeric'
-                        maxLength={4}
-                        onChangeText={anoPublicacao => setItem({...item, anoPublicacao})}
-                        value={item.anoPublicacao ? item.anoPublicacao.toString() : item.anoPublicacao}
-                    />
-                </View>
-
-                <View style={estiloItem.campoContainerDescricao}>
-                    <FontAwesome5 name="book-open" size={26} color="#192f6a" />
-                    <ScrollView style={estiloItem.campoDescricaoScroll}>
+                        <MaterialCommunityIcons name="google-classroom" size={24} color="#384B59" />
                         <TextInput
-                            style={estiloItem.campoDescricao}
-                            placeholder="Descrição"
-                            placeholderTextColor='#ffffff'
-                            multiline={true}
-                            numberOfLines={4}
-                            blurOnSubmit={false}
-                            onChangeText={descricao => setItem({...item, descricao})}
-                            value={item.descricao}
+                            style={estiloItem.campo}
+                            placeholder="Turma"                    
+                            onChangeText={Turma => setItem({...item, Turma})}
+                            value={item.Turma}
                         />
-                    </ScrollView>
                 </View>
 
                 <View style={estiloItem.botoesContainer}>
                     
-                    <TouchableOpacity onPress={() => salvar(item)} style={estiloItem.botaoContainer}>
-                        <LinearGradient colors={['#4c669f', '#192f6a', '#081a31']} style={estiloItem.botao}>
-                            <MaterialIcons name="save" size={24} color="white" />
-                        </LinearGradient>
+                    <TouchableOpacity onPress={() => salvar(item)} style={estiloItem.botaoContainer}>                      
+                            <MaterialIcons name="save" size={24} color="white" />                             
                     </TouchableOpacity>
 
-                    <TouchableOpacity onPress={() => remover(item)} style={estiloItem.botaoContainer}>
-                        <LinearGradient colors={['#4c669f', '#192f6a', '#081a31']} style={estiloItem.botao}>
-                            <MaterialIcons name="delete" size={24} color="white" />
-                        </LinearGradient>
+                    <TouchableOpacity onPress={() => remover(item)} style={estiloItem.botaoContainer}>                        
+                            <MaterialIcons name="delete" size={24} color="white" />                                 
                     </TouchableOpacity>
 
                 </View>

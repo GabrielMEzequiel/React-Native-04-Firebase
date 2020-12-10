@@ -26,30 +26,21 @@ const RotasDrawer = () => {
       />
 
       <Drawer.Screen 
-        name="Colecao" 
+        name="Alunos" 
         component={Colecao}
         options={{
           drawerIcon: ({color, size}) => (
-            <MaterialIcons name="storage" size={size} color={color} />
+            <MaterialIcons name="people" size={size} color={color} />
           )
         }}      
       />
       <Drawer.Screen 
-        name="Item" 
+        name="Adicionar Aluno" 
         component={Item}
         initialParams={{item: {}, operacao: 'adicionar'}}
         options={{
           drawerIcon: ({color, size}) => (
-            <MaterialIcons name="done-all" size={size} color={color} />
-          )
-        }}      
-      />
-      <Drawer.Screen 
-        name="Perfil" 
-        component={Perfil}
-        options={{
-          drawerIcon: ({color, size}) => (
-            <MaterialIcons name="person" size={size} color={color} />
+            <MaterialIcons name="person-add" size={size} color={color} />
           )
         }}      
       />

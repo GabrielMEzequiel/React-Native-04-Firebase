@@ -22,5 +22,5 @@ export class LivroFB{
 
     removerLivro(Livro){
         this.state.colecao.doc(Livro.id).delete();
-    }
+    } 
 }

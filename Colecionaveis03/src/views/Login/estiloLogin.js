@@ -2,21 +2,19 @@ import { StyleSheet } from 'react-native';
 
 const estiloLogin = StyleSheet.create({
    container: {   
-      flex: 1,
-   },
-   fundo: {   
+      backgroundColor: '#e8eaec',
       justifyContent: 'center',
       width: '100%',
       height: '100%',
+      flex: 1,
    },
    logoContainer: {
       alignItems: 'center',
       marginBottom: 20,
    },
    logo: {
-      width: 90,
-      height: 90,
-      borderRadius: 50,
+      width: 200,
+      height: 100,
       justifyContent: 'center',
       alignItems: "center",
       padding: 20,
@@ -33,13 +31,14 @@ const estiloLogin = StyleSheet.create({
    campo: {
       width: '100%',
       fontSize: 18,
-      color: '#FFFFFF',
+      color: '#384B59',
       marginLeft: 15,
       paddingBottom: 10,
       borderBottomWidth: 1,
-      borderColor: 'white',
+      borderColor: '#384B59',
     },
-   botaoLinearGradient: {    
+   botaoContainer: {    
+      backgroundColor: '#384B59',
       flexDirection: 'row',
       justifyContent: 'center',
       alignItems: 'center',

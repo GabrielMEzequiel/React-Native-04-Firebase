@@ -9,8 +9,8 @@ const Tab = createBottomTabNavigator();
 
 const icones = {
   Inicial: { name: 'home' },
-  Colecao: { name: 'storage' },
-  Item: { name: 'done-all' }, 
+  Colecao: { name: 'people' },
+  Item: { name: 'person-add' }, 
 }
 
 const RotasTab = () => {
@@ -18,7 +18,7 @@ const RotasTab = () => {
     <Tab.Navigator
       tabBarOptions={
         {
-          style: {backgroundColor: '#081a31', borderTopColor: '#081a31'},
+          style: {backgroundColor: '#384B59', borderTopColor: '#384B59'},
           activeTintColor: '#FFFFFF',
           showLabel: false,
         }
